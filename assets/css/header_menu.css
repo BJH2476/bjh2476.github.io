@@ -1,0 +1,144 @@
+.header__menu {
+  width: 100%;
+  height: 8.8rem;
+  background: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: top 0.3s ease-in-out;
+}
+
+.header__menu__logo {
+  width: 4rem;
+  height: 4rem;
+  padding-left: 6rem;
+}
+
+.header__menu__logo img {
+  width: auto;
+  height: 100%;
+}
+
+.header__menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 6rem;
+}
+
+.header__menu__list a {
+  color: #ffffff;
+  margin-left: 10%;
+  font-size: 2.4rem;
+  letter-spacing: 0px;
+  font-family: var(--font);
+  font-weight: 300;
+}
+
+.header__menu__dropdown {
+  display: none;
+  height: 100%;
+
+  position: relative;
+}
+
+.header__menu__dropdown__btn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 6rem;
+}
+
+.header__menu__dropdown__btn img {
+  width: auto;
+  height: 50%;
+}
+
+.header__menu__dropdown__content {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7d7d7;
+  z-index: 100;
+  position: relative;
+  padding: 2rem;
+  height: 200%;
+}
+
+.header__menu__dropdown__content a {
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  font-family: var(--font);
+  font-weight: 300;
+}
+
+.header__menu__dropdown:hover .header__menu__dropdown__content {
+  display: flex;
+}
+
+.header__menu__list a:hover {
+  color: #909090;
+  transform: scale(0.9);
+}
+
+.header__menu__logo img:hover {
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+.header__menu__dropdown__btn:hover,
+.header__menu__dropdown__content a:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 1200px) {
+  .header__menu {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__menu__list {
+    display: none;
+  }
+  .header__menu__dropdown {
+    display: block;
+  }
+}
+
+.header__right {
+  flex-grow: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__right1 img {
+  width: 10%;
+  height: auto;
+
+  position: absolute;
+  left: 1400px;
+  top: 220px;
+}
+
+.header__right2 img {
+  width: 8%;
+  height: auto;
+
+  position: absolute;
+  left: 1500px;
+  top: 70px;
+}

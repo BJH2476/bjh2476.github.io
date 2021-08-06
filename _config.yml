@@ -1,0 +1,44 @@
+title: JinHyuk Developer Portfolio
+description: >-
+  안녕하세요. 항상 성장에 대해 고민하고 자기 발전에 끊임없이 노력하는 개발자 변진혁 입니다.
+url: "https://bjh2476.github.io"
+github: "https://github.com/BJH2476"
+email: xollgun@naver.com
+google_analytics: <YOUR UA TOKEN>
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+comments:
+  enabled: true
+  repo: ChemistryX/hyde-comments
+  issue-term: pathname
+  theme: github-light
+
+collections:
+  pages:
+    output: true
+  projects:
+    output: true
+  tags:
+    output: true
+
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: default
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:title
+  - scope:
+      type: projects
+    values:
+      layout: project
+      permalink: /projects/:title
+  - scope:
+      type: tags
+    values:
+      layout: tag
+      permalink: /tags/:title
